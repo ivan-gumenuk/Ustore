@@ -1,0 +1,127 @@
+.logo {
+  line-height: 50px;
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 2px;
+  color: #ffc700;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  width: 100%;
+  background-color: #433c80;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu a {
+  outline-color: #ffc700;
+  color: white;
+}
+
+.menu a:hover {
+  color: #ffc700;
+  text-shadow: 1px 1px 0 black;
+}
+
+.search {
+  line-height: 45px;
+  padding: 10px;
+}
+
+.search input:first-child {
+  text-indent: 5px;
+  font-weight: 500;
+  color: #433c80;
+  font-weight: bold;
+  outline-color: #ffc700;
+}
+
+.search input:last-child {
+  font-weight: bold;
+  padding: 0 10px 0 10px;
+  outline-color: #ffc700;
+}
+
+.search input:last-child:hover {
+  background-color: #ffe073;
+  outline-color: #ffc700;
+}
+
+.search input {
+  font-size: medium;
+  height: 25px;
+}
+
+.navigation ul li {
+  line-height: 33px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.label {
+  font-family: "Red Rose", cursive;
+}
+
+@media (max-width: 900px) {
+  .navigation ul li {
+    display: none;
+  }
+  .navigation ul::after {
+    content: "Меню";
+    line-height: 74px;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    padding-left: 19px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .navigation ul:hover .search {
+    display: none;
+  }
+  .catalog div img {
+    width: 70%;
+  }
+  .navigation ul:hover {
+    background-color: #ccab35;
+  }
+
+  .navigation ul:hover::before {
+    content: url(assets/image/logo-gold.png);
+    position: absolute;
+    transform: scale(.15);
+    top: -350px;
+    left: -230px;
+  }
+
+  .navigation ul:hover > li {
+    display: flex;
+    flex-direction: row;
+    right: 15px;
+    font-size: 20px;
+    padding-left: 20px;
+    background: linear-gradient(90deg, #433c80 60%, #ccab35 95%);
+    text-align: center;
+    }
+
+  .navigation ul:hover::after {
+    display: none;
+  }
+  .logo {
+    white-space: nowrap;
+  }
+  .search {
+    display: none;
+  }
+  .tagline {
+    font-size: 30px;
+  }
+  .gradient {
+    width: 90%;
+  }
+}

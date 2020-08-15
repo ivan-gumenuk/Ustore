@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.wrap {
+  height: 200px;
+  padding: 25px;
+  background: #433c80;
+  margin: 30px 0;
+}
+
+.gradient {
+  height: 140px;
+  width: 80%;
+  margin: 0 auto;
+  border: 10px solid transparent;
+  border-image: linear-gradient(to right, transparent 0%, #ffc700 100%);
+  border-image-slice: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tagline {
+  padding: 0 20px 10px 20px;
+  font-family: "Lobster", cursive;
+  color: #FFD540;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.catalog {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.catalog-box {
+  text-align: center;
+  font-size: 25px;
+}
+
+.catalog-box a {
+  color: black;
+}
+
+.catalog-box:hover a {
+  color: #ffc700;
+  text-shadow: 1px 1px 0 black;
+}
+
+.article {
+  padding: 10px 50px;
+}
+
+.article ul {
+  list-style: inside;
+  padding: 10px;
+}
+
+.catalog div img {
+  width: 80%;
+  border-radius: 10px;
+  margin: 15px 50px;
+  box-shadow: 1px 1px 0.5em #313131bd;
+  max-width: 750px;
+}
+
+body {
+  margin-top: 100px;
+  background-color: rgba(255, 255, 249, 0.808);
+}
+
+/*----------------------------------FOOTER------------------------------------*/
+footer {
+  padding: 30px 0 30px 0;
+  background-color: #433c80;
+  color: #ffc700;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  letter-spacing: 2px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul a {
+  color: white;
+}
+
+footer ul a:hover {
+  color: #ffc700;
+  text-shadow: 1px 1px 0 black;
+}
+
+footer ul:first-child {
+  text-align: end;
+  align-items: flex-end;
+  padding: 0 10px 0 0;
+  border-right: 1px solid #ffc700;
+}
+
+footer ul:last-child {
+  text-align: start;
+  align-items: flex-start;
+  padding: 0 0 0 10px;
+  border-left: 1px solid #ffc700;
+}
