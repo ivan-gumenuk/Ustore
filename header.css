@@ -68,7 +68,7 @@
   font-family: "Red Rose", cursive;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .navigation ul li {
     display: none;
   }
@@ -94,7 +94,7 @@
   .navigation ul:hover::before {
     content: url(assets/image/logo-gold.png);
     position: absolute;
-    transform: scale(.15);
+    transform: scale(0.15);
     top: -350px;
     left: -230px;
   }
@@ -104,10 +104,10 @@
     flex-direction: row;
     right: 15px;
     font-size: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
     background: linear-gradient(90deg, #433c80 60%, #ccab35 95%);
-    text-align: center;
-    }
+    text-align: start;
+  }
 
   .navigation ul:hover::after {
     display: none;

@@ -1,0 +1,28 @@
+.male-bode {
+  display: grid;
+  grid-auto-columns: max-content;
+}
+
+.filter  h2{
+  padding: 20px;
+}
+
+.filter {
+  height: 200px;
+  background-color: aquamarine;
+  margin-bottom: 20px;
+}
+
+.content {
+  height: 500px;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.boot {
+  margin: 25px;
+  height: 300px;
+  width: 300px;
+  background-color: azure;
+}

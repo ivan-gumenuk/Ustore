@@ -1,0 +1,82 @@
+.card {
+  margin: 0 20px 15px 20px;
+  padding: 20px;
+  background: #fcfcfc73;
+  max-width: 1200px;
+  border-radius: 10px;
+  justify-self: center;
+}
+
+.card h1 {
+  text-align: center;
+}
+
+body {
+  background-image: url(assets/image/trianglify-lowres.png);
+  background-size: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.card textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 15px;
+}
+
+legend {
+  padding: 3px 10px;
+  border: 2px solid #fce285;
+  border-radius: 5px;
+  background-color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+fieldset {
+  border: 2px solid #fce285;
+  background-color: rgb(255, 255, 249);
+  border-radius: 10px;
+  padding: 10px 25px;
+  margin-bottom: 25px;
+}
+
+.post input {
+  margin: 10px 5px 10px 0;
+}
+
+.card fieldset p input {
+  padding: 2px 15px 0 15px;
+  margin: 0px 0px 5px 0px;
+  width: 100%;
+  font-size: 20px;
+  border: 2px solid #fce285;
+  outline-color: #a68100;
+}
+
+textarea {
+  border: 2px solid #fce285;
+  outline-color: #a68100;
+  overflow: hidden;
+  min-height: 100px;
+  resize: vertical;
+}
+
+.button {
+  height: 25px;
+  margin: 0 25px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid goldenrod;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ffc700;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

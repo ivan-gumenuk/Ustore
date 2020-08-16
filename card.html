@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>LIDI shoes</title>
+  <meta name="keywords" content="shoes">
+  <meta name="description" content="ustore, ucode, frontend, shoes">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="card.css">
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <nav class="navigation">
+      <h1 class="logo">Интернет-магазин <span class="label">"LIDI"</span></h1>
+      <ul>
+        <li class="menu"><a href="index.html">Главная</a></li>
+        <li class="menu"><a href="male.html">Мужская обувь</a></li>
+        <li class="menu"><a href="famale.html">Женская обувь</a></li>
+        <li class="menu"><a href="#">Корзина</a></li>
+      </ul>
+      <form class="search">
+        <input class="input-text" classtype="search" name="q" placeholder="Поиск по сайту">
+        <input type="submit" value="Поиск">
+      </form>
+    </nav>
+  </header>
+
+  <main class="card">
+    <h1>ОФОРМЛЕНИЕ ЗАКАЗА</h1>
+    <form>
+
+      <fieldset class="goods">
+        <legend>Заказ</legend>
+        <div style="height: 200px;"></div>
+      </fieldset>
+
+      <fieldset class="card-box">
+        <legend>Покупатель</legend>
+        <p><label>Фамилия и имя<br><input type="text" name="Ф.И.О:"></label></p>
+        <p><label>Телефон *<br><input type="tel" name="Телефон" required></label></p>
+        <p><label>Город *<br><input type="text" name="Город" required></label></p>
+        <p><label>Адрес получателя или № отделения<br><input type="text" name="Адрес"></label></p>
+      </fieldset>
+
+      <fieldset class="post">
+        <legend>Способ доставки</legend>
+        <input type="radio" name="post" id="a" checked value="Склад">
+        <label for="a">Новая почта (доставка до склада)</label><br>
+        <input type="radio" name="post" id="b" value="Курьер">
+        <label for="b">Новая почта (доставка курьером)</label>
+      </fieldset>
+
+      <fieldset class="post">
+        <legend>Способ оплаты</legend>
+        <div>
+          <label><input type="radio" name="pay" value="Картой">
+            Оплата картой VISA/MASTERCARD или Privat24/Monobank</label><br>
+          <label><input type="radio" name="pay" checked value="Наложеный платеж">
+            Оплата при получении (Наложеный платеж НП)</label><br>
+        </div>
+
+      </fieldset>
+      <fieldset>
+        <legend>Комментарий</legend>
+        <textarea name="Комментарий" id="" cols="100" rows="10" placeholder="Еще что-то?"></textarea>
+      </fieldset>
+      <div class="buttons">
+        <input type="submit" value="Заказать" class="button">
+        <input type="reset" value="Удалить" class="button">
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <ul>
+      <h3>Информация</h3>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Оплата</a></li>
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Условия возврата</a></li>
+    </ul>
+    <ul>
+      <h3>Интернет-магазин <span class="label">"LIDI"</span></h3>
+      <li><a href="tel:#">Номер телефона</a></li>
+      <li><a href="mailto:#">Электронная почта</a></li>
+      <li><a href="#">Позвонить вам?</a></li>
+    </ul>
+  </footer>
+
+</body>
+
+</html>
