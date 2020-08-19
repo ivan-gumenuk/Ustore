@@ -28,7 +28,7 @@
 .tagline {
   padding: 0 20px 10px 20px;
   font-family: "Lobster", cursive;
-  color: #FFD540;
+  color: #ffd540;
   text-shadow: 2px 2px 2px black;
   letter-spacing: 2px;
 }
@@ -38,10 +38,10 @@ a {
 }
 
 .catalog {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 100%;
 }
 
 .catalog-box {
@@ -60,6 +60,8 @@ a {
 
 .article {
   padding: 10px 50px;
+  background-size: 110%;
+  font-size: 20px;
 }
 
 .article ul {
@@ -76,10 +78,15 @@ a {
 }
 
 body {
-  margin-top: 100px;
-  background-color: rgba(255, 255, 249, 0.808);
+  background-image: url(assets/image/trianglify-lowres.png);
+  background-size: 100%;
+  padding-top: 100px;
 }
 
+.blur {
+  background-color: rgba(255, 255, 249, 0.774);
+
+}
 /*----------------------------------FOOTER------------------------------------*/
 footer {
   padding: 30px 0 30px 0;

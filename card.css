@@ -35,7 +35,7 @@ legend {
 
 fieldset {
   border: 2px solid #fce285;
-  background-color: rgb(255, 255, 249);
+  background-color: rgb(250,252,213);
   border-radius: 10px;
   padding: 10px 25px;
   margin-bottom: 25px;
@@ -69,6 +69,7 @@ textarea {
   font-size: 15px;
   font-weight: bold;
   border: 2px solid goldenrod;
+  background-color: rgb(250,252,213);
 }
 
 .button:hover,

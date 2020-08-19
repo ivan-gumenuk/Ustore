@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>LIDI shoes</title>
+  <title>Мужской каталог</title>
   <meta name="keywords" content="shoes">
   <meta name="description" content="ustore, ucode, frontend, shoes">
   <link rel="stylesheet" href="style.css">
@@ -34,12 +34,24 @@
   </header>
 
   <main class="male-body">
-    <section class="filter">
-      <h2>Фильтры</h2>
-    </section>
-    <div class="content">
-      <div class="boot"></div>
+    <div class="filters">
+      <fieldset>
+        <legend>Максимальная цена</legend>
+        <div class="slider"></div>
+        <div id="slider-result">2000грн</div>
+        <input type="hidden" id="hidden" value="2000">
+      </fieldset>
+      <fieldset class="select-box">
+        <legend>Сортировка</legend>
+        <select id="select-sort">
+          <option value="new" selected>По новизне</option>
+          <option value="up">По возрастанию цены</option>
+          <option value="down">По убыванию цены</option>
+        </select>
+      </fieldset>
     </div>
+
+    <div class="content" id="all-goods-male"></div>
   </main>
 
   <footer>
@@ -58,6 +70,11 @@
     </ul>
   </footer>
 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/card.js"></script>
 </body>
 
 </html>

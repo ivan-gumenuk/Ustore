@@ -3,26 +3,143 @@
   grid-auto-columns: max-content;
 }
 
-.filter  h2{
-  padding: 20px;
-}
-
-.filter {
-  height: 200px;
-  background-color: aquamarine;
-  margin-bottom: 20px;
+.filters {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 25px;
+  width: 100%;
+  padding: 0 25px;
 }
 
 .content {
-  height: 500px;
-  background-color: aqua;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 2%;
+  padding: 20px 25px;
+  justify-content: center;
+  margin-bottom: 3%;
 }
 
 .boot {
-  margin: 25px;
-  height: 300px;
-  width: 300px;
-  background-color: azure;
+  background-color: rgba(255, 255, 255, 0.699);
+  border-radius: 10px;
+  display: grid;
+  grid-row-gap: 5px;
+  font-weight: bold;
+  justify-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.boot img {
+  width: 70%;
+  border-radius: 15px;
+}
+
+.add-to-card {
+  letter-spacing: 0.8px;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+.add-to-card:hover {
+  background-color: #ffc700;
+  color: white;
+  outline: none;
+  text-shadow: 1px 1px 2px black;
+}
+
+legend {
+  padding: 3px 10px;
+  border: 2px solid #fce285;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+fieldset {
+  border: 2px solid #fce285;
+  background-color: rgba(250, 252, 213, 0.521);
+  border-radius: 10px;
+  padding: 0px 15px;
+  height: 100%;
+}
+
+#select-sort {
+  width: 100%;
+  font-size: 120%;
+  padding: 10px 15px;
+  border: 2px solid #fce285;
+  outline: none;
+  border-radius: 10px;
+}
+
+.select-box {
+  display: grid;
+  grid-template-rows: 1fr;
+  padding-top: 20px;
+}
+
+/*Фон слайдера*/
+.slider {
+  height: 11px;
+  background-color: rgba(141, 140, 140, 0.788);
+  position: relative;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+/*Стиль кнопки слайдера*/
+.ui-slider-handle {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -7px;
+  margin-left: -12px;
+  z-index: 50;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+/*Элемент div результата, в котором выводится значение слайдера*/
+#slider-result {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffc700;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 1px 1px #000;
+  font-weight: 700;
+  padding: 5px 0 10px 0;
+}
+
+/*Полоска заполнителя слайдера*/
+.ui-widget-header {
+  background: #ffc700;
+  height: 8px;
+  left: 1px;
+  top: 1px;
+  position: absolute;
+  border-radius: 15px;
+}
+
+a {
+  outline: none;
+}
+
+@media (max-width: 800px) {
+  .content {
+    grid-template-columns: 45% 45%;
+  }
+  .filters {
+    grid-template-columns: 1fr;
+    padding: 0 40px;
+  }
+  .select-box{
+    padding-bottom: 30px;
+  }
+  footer {
+    margin-top: 25%;
+  }
 }
