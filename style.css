@@ -85,7 +85,17 @@ body {
 
 .blur {
   background-color: rgba(255, 255, 249, 0.774);
+}
 
+.card-box {
+  position: absolute;
+  background-color:  #433c80;
+  text-align: center;
+  padding: 25px 20px;
+  border: 2px solid #fce285;
+  color: white;
+  width: 250px;
+  border-radius: 10px;
 }
 /*----------------------------------FOOTER------------------------------------*/
 footer {

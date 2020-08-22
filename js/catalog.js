@@ -27,7 +27,6 @@ function addGoodsToPAge(goods, min = 0, max = 200000) {
       let button = document.createElement("button");
 
       div.className = "boot";
-      div.id = res.id;
       name.textContent = res.name;
       div.append(name);
       img.src = res.src;
@@ -42,6 +41,7 @@ function addGoodsToPAge(goods, min = 0, max = 200000) {
       div.append(price);
       button.textContent = "Купить";
       button.className = "add-to-card";
+      button.dataset.id = res.id;
       div.append(button);
       allGoods.append(div);
     }
@@ -64,11 +64,11 @@ $(".slider").slider({
   //Обновляем скрытое поле формы, так что можно передать данные с помощью формы
   change: function (event, ui) {
     $('#hidden').attr('value', ui.value);
-    if (allGoods)
-      addGoodsToPAge(male, 0, ui.value);
-    else {
-      allGoods = document.getElementById("all-goods-female");
+    if (document.title === "Женский каталог")
       addGoodsToPAge(female, 0, ui.value);
+    else {
+      allGoods = document.getElementById("all-goods-male");
+      addGoodsToPAge(male, 0, ui.value);
     }
   }
 });
@@ -81,8 +81,13 @@ male.push(addBoots("m4", "Кроссовки ML-4", 1300, "assets\\image\\none.j
 male.push(addBoots("m5", "Кроссовки ML-5", 1400, "assets\\image\\none.jpg", "серый"));
 male.push(addBoots("m6", "Кроссовки ML-6", 2500, "assets\\image\\none.jpg", "чёрный"));
 male.push(addBoots("m7", "Кроссовки ML-7", 1000, "assets\\image\\none.jpg", "зелёный"));
-male.push(addBoots("m8", "Кроссовки ML-8", 1700, "assets\\image\\none.jpg", "чёрный"));
+male.push(addBoots("m8", "Кроссовки ML-8", 1700, "assets\\image\\none.jpg", "белый"));
 male.push(addBoots("m9", "Кроссовки ML-9", 1100, "assets\\image\\none.jpg", "чёрный"));
+male.push(addBoots("mm10", "Кроссовки ML-10", 1800, "assets\\image\\none.jpg", "красный"));
+male.push(addBoots("mm11", "Кроссовки ML-11", 1300, "assets\\image\\none.jpg", "чёрный"));
+male.push(addBoots("mm12", "Кроссовки ML-12", 1350, "assets\\image\\none.jpg", "белый"));
+male.push(addBoots("mm13", "Кроссовки ML-13", 1890, "assets\\image\\none.jpg", "красный"));
+male.push(addBoots("mm14", "Кроссовки ML-14", 1900, "assets\\image\\none.jpg", "чёрный"));
 
 let female = [];
 female.push(addBoots("f1", "Кроссовки FML-1", 2500, "assets\\image\\none.jpg", "чёрный"));
@@ -97,11 +102,12 @@ female.push(addBoots("f9", "Кроссовки FML-9", 1800, "assets\\image\\non
 
 
 let selectSort = "new";
-let allGoods = document.getElementById("all-goods-male");
+let allGoods = document.getElementById("all-goods-female");
 
 if (allGoods)
-  addGoodsToPAge(male);
-else {
-  allGoods = document.getElementById("all-goods-female");
   addGoodsToPAge(female);
+else {
+  allGoods = document.getElementById("all-goods-male");
+  addGoodsToPAge(male);
 }
+

@@ -50,5 +50,4 @@ document.getElementById("select-sort").addEventListener('change', function (e) {
     doSortCatalog(male, e.target.value);
     addGoodsToPAge(male, 0, max.value);
   }
-
 })
