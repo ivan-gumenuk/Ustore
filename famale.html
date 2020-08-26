@@ -6,9 +6,10 @@
   <title>Женский каталог</title>
   <meta name="keywords" content="shoes">
   <meta name="description" content="ustore, ucode, frontend, shoes">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="male.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/male.css">
+  <link rel="stylesheet" href="css/popup.css">
   <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -52,16 +53,63 @@
     </div>
 
     <div class="content" id="all-goods-female"></div>
-  </main>
 
+    <a href="#" class="overlay" id="info-1"></a>
+    <div class="popup pop-text">
+      <h2>О нас</h2>
+      <span>Сдесь будет немного информации о нас</span>
+      <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+
+    <a href="#" class="overlay" id="info-2"></a>
+    <div class="popup pop-text">
+      <h2>Оплата</h2>
+      <ol>
+        <li>
+          <h4>Предоплата:</h4>
+          <p>Если вы делали заказ по телефону или в чате, вы можете совершить оплату на карточный счет ПриватБанка,
+            Monobank который вам вышлет консультант смс или почтой, через приложение или через любой терминал.</p>
+          <p>Если товар в наличии вы можете сделать полную предоплату, и после этого мы отправим вам посылку.</p>
+          <p>Если вы сделали заказ в производство, то вам достаточно сделать частичную предоплату 20%, как гарантия
+            заказа. Оставшуюся часть вы можете оплатить после выполнения заказа или наложенным платежом на Новой Почте.
+          </p>
+        </li>
+        <li>
+          <h4>Наложенный платеж:</h4>
+          <p>Если товар в наличии вы можете оплатить посылку наложенным платежом на новой почте.</p>
+          <p>В случае выбора данной услуги, получатель так же оплачивает комиссию Новой почты по переводу денежных
+            средств.</p>
+          <p>Если товар был заказан, и сделана частичная предоплата, вы так же можете оформить наложенный платеж и
+            оплатить оставшуюся сумму при получении товара.</p>
+        </li>
+        <p><strong>Внимание! Данная услуга не распространяется на отправку товара за пределы Украины.</strong></p>
+      </ol>
+      <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+
+    <a href="#" class="overlay" id="info-3"></a>
+    <div class="popup pop-text">
+      <h2>Доставка</h2>
+      <span>Тут будет описана доставка</span>
+      <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+
+    <a href="#" class="overlay" id="info-4"></a>
+    <div class="popup pop-text">
+      <h2>Условия возврата</h2>
+      <span>Тут будут условия возврата</span>
+      <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+
+  </main>
 
   <footer>
     <ul>
       <h3>Информация</h3>
-      <li><a href="#">О нас</a></li>
-      <li><a href="#">Оплата</a></li>
-      <li><a href="#">Доставка</a></li>
-      <li><a href="#">Условия возврата</a></li>
+      <li><a href="#info-1">О нас</a></li>
+      <li><a href="#info-2">Оплата</a></li>
+      <li><a href="#info-3">Доставка</a></li>
+      <li><a href="#info-4">Условия возврата</a></li>
     </ul>
     <ul>
       <h3>Интернет-магазин <span class="label">"LIDI"</span></h3>
@@ -71,6 +119,7 @@
     </ul>
   </footer>
 
+  <script src="js/assets.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
   <script src="js/script.js"></script>

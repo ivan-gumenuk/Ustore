@@ -1,6 +1,7 @@
 .male-bode {
   display: grid;
-  grid-auto-columns: max-content;
+  grid-template-columns: 100%;
+  align-self: center;
 }
 
 .filters {
@@ -34,6 +35,8 @@
 .boot img {
   width: 70%;
   border-radius: 15px;
+  min-width: 100px;
+  max-width: 500px;
 }
 
 .add-to-card {
@@ -128,7 +131,7 @@ a {
   outline: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 830px) {
   .content {
     grid-template-columns: 45% 45%;
   }
@@ -140,6 +143,6 @@ a {
     padding-bottom: 30px;
   }
   footer {
-    margin-top: 40%;
+    margin-top: 45%;
   }
 }

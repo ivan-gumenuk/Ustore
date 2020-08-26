@@ -7,7 +7,7 @@ function getSortValue() {
 
 function doSortCatalog(catalog, sort) {
   if (sort === "new") {
-    catalog.sort(function(a, b) {
+    catalog.sort(function (a, b) {
       if (a.id < b.id)
         return 1;
       else if (a.id > b.id)
@@ -17,7 +17,7 @@ function doSortCatalog(catalog, sort) {
     });
   }
   else if (sort === "down") {
-    catalog.sort(function(a, b) {
+    catalog.sort(function (a, b) {
       if (a.price < b.price)
         return 1;
       else if (a.price > b.price)
@@ -27,7 +27,7 @@ function doSortCatalog(catalog, sort) {
     });
   }
   else {
-    catalog.sort(function(a, b) {
+    catalog.sort(function (a, b) {
       if (a.price < b.price)
         return -1;
       else if (a.price > b.price)
@@ -37,6 +37,11 @@ function doSortCatalog(catalog, sort) {
     });
   }
 }
+
+
+
+
+
 
 document.getElementById("select-sort").addEventListener('change', function (e) {
   let max = document.getElementById("hidden");

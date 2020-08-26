@@ -93,7 +93,7 @@
   }
 
   .navigation ul:hover::before {
-    content: url(assets/image/logo-gold.png);
+    content: url(../assets/image/logo-gold.png);
     position: absolute;
     transform: scale(0.15);
     top: -350px;

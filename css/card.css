@@ -12,8 +12,6 @@
 }
 
 body {
-  background-image: url(assets/image/trianglify-lowres.png);
-  background-size: 100%;
   display: grid;
   grid-template-rows: 1fr;
 }
@@ -80,4 +78,46 @@ textarea {
 .buttons {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.one-offer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+  margin: 10px 0;
+  background-color: rgb(252, 253, 228);
+}
+.one-offer > div {
+  text-align: start;
+  line-height: 10px;
+  margin: 30px 10px 10px 10px;
+}
+
+.one-offer > img {
+  width: 100px;
+  border-radius: 10px;
+  margin: 20px 10px;
+  border: 2px solid goldenrod;
+}
+
+.plus-minus {
+  display: flex;
+  flex-direction: column;
+  width: 45x;
+  height: 45px;
+}
+.plus-minus:first-child {
+  background: url(../assets/image/plus.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.plus-minus:last-child {
+  background-image: url(../assets/image/minus.png);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: 1px;
+  width: 45px;
 }

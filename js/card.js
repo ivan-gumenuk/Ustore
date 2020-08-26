@@ -1,7 +1,7 @@
 document.onclick = event => {
   if (event.target.classList.contains('add-to-card'))
     addToCard(event.target.dataset.id)
-}
+};
 
 function addToCard(id) {
   let storage = JSON.parse(localStorage.getItem("lidiCard"));
@@ -58,13 +58,13 @@ document.onmouseover = hover => {
         box.innerHTML += `<span>${addCardSpan(card[i], card[card[i]])}</span><br>`;
     hover.target.append(box);
   }
-}
+};
 
 document.onmouseout = hover => {
   if (hover.target.classList.contains("card-pointer"))
     document.getElementsByClassName("card-box")[0].remove();
-}
+};
 
 let card = JSON.parse(localStorage.getItem("lidiCard"));
-if (card)
+if (card && document.title != "Корзина")
   document.getElementsByClassName("card-pointer")[0].textContent = `Корзина (${card.count})`;
